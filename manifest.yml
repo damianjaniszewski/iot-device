@@ -1,0 +1,32 @@
+applications:
+- name: iot-device
+  memory: 128M
+  instances: 1
+  timeout: 30
+  stackato:
+    description: IoT Demo - Device
+    autoscale:
+      enabled: true
+      instances:
+        min: 2
+        max: 8
+      cpu:
+        min: 40
+        max: 60
+#    hooks:
+#      pre-push:
+#      - gulp dist
+    ignores:
+      - .babelrc
+      - .editorconfig
+      - .eslintignore
+      - .eslintrc
+      - .git
+      - .sass-lint.yml
+      - README.md
+      - __tests__
+      - public
+      - server
+      - src
+      - node_modules
+      - webpack.config.babel.js

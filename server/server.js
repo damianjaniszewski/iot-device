@@ -10,7 +10,7 @@ import api from './api';
 
 dotenv.config({silent: true});
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8102;
 const HOST = process.env.VCAP_APP_HOST || "0.0.0.0";
 
 const app = express()

@@ -125,13 +125,13 @@ export default class DeviceDashboard extends Component {
     return (
       <App centered={false} inline={true}>
       {setSensorLayer}
-      <Header primary={true} direction='row' justify='between' pad={{horizontal: 'small'}} colorIndex='neutral-1'>
+      <Header direction='row' justify='between' pad={{horizontal: 'small'}} colorIndex='neutral-1'>
         <Title>HPE IoT Demo - Device</Title>
         <Menu direction="column" justify="end" align="center">
           <Button icon={<MenuIcon />} onClick={this._onSensorSettings} />
         </Menu>
       </Header>
-      <Section primary={true} pad={{horizontal: 'small', vertical: 'small'}}>
+      <Section flex={true} primary={true} pad={{horizontal: 'small', vertical: 'small'}}>
         <Tiles fill={true} flush={true} pad={{horizontal: 'none'}} align='start'>
           <Tile fill={true} flush={true} pad={{horizontal: 'none', vertical: 'none'}} align='start'>
             <Label align='start' size='medium' margin='small'>Sensor ID: {this.state.sensorId}</Label>
@@ -149,8 +149,8 @@ export default class DeviceDashboard extends Component {
           </Tile>
         </Tiles>
       </Section>
-      <Footer primary={true} direction='row' justify='between' pad={{horizontal: 'small', vertical: 'small'}} colorIndex='neutral-1'>
-      <img src="img/HPE_log_left_wht.png" width="8%" height="8%" />IoT&nbsp;|&nbsp;Device&nbsp;|&nbsp;&copy; 2017 HPE Damian Janiszewski
+      <Footer direction='row' justify='between' pad={{horizontal: 'small', vertical: 'small'}} colorIndex='neutral-1'>
+        <img src="img/HPE_log_left_wht.png" width="8%" height="8%" />IoT&nbsp;|&nbsp;Device&nbsp;|&nbsp;&copy; 2017 HPE Damian Janiszewski
       </Footer>
       </App>
     );

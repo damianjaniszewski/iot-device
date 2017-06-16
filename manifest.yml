@@ -1,7 +1,7 @@
 applications:
 - name: iot-device
   memory: 128M
-  instances: 1
+  instances: 2
   timeout: 30
   stackato:
     description: IoT Demo - Device
@@ -13,14 +13,12 @@ applications:
       cpu:
         min: 40
         max: 60
-#    hooks:
-#      pre-push:
-#      - gulp dist
     ignores:
       - .babelrc
       - .editorconfig
       - .eslintignore
       - .eslintrc
+      - .env
       - .git
       - .sass-lint.yml
       - README.md

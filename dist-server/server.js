@@ -40,7 +40,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 _dotenv2.default.config({ silent: true });
 
-var PORT = process.env.PORT || 8080;
+var PORT = process.env.PORT || 8102;
 var HOST = process.env.VCAP_APP_HOST || "0.0.0.0";
 
 var app = (0, _express2.default)().use((0, _compression2.default)()).use((0, _cookieParser2.default)()).use((0, _morgan2.default)('dev'))
